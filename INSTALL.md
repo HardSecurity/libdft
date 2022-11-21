@@ -1,6 +1,6 @@
 # Installation Instructions
 
-Copyright (C) 2015-2022, Brown University, Secure Systems Lab.
+Copyright (C) 2015-2022, Brown University, Secure Systems Lab.  
 Copyright (C) 2010-2015, Columbia University.
 
 Copying and distribution of this file, with or without modification,
@@ -18,15 +18,15 @@ without warranty of any kind.
       from now on.
 
   2. Type `export PIN_HOME=/usr/src/pin` to set the environment
-     variable PIN_HOME to the root path of Pin. Replace `/usr/src/pin`
-     with *your* root path.
+     variable `PIN_HOME` to the root path of Pin.  
+     Replace `/usr/src/pin` with *your* root path.
 
   3. `cd` to the directory `src/`, which contains the source code of `libdft`,
-     and type `make` to compile the package (_i.e.,_ the `libdft` library).
+     and type `make` to compile the package (_i.e.,_ the `libdft` library).  
      NOTE: use `Makefile.old` if your Pin version is v2.12-55942 of older.
 
   4. `cd` to the directory `tools/` and type `make tools` to compile the
-     accompanying tools (_e.g.,_ `nullpin`, `libdft`, `libdft-dta`, _etc._).
+     accompanying tools (_e.g.,_ `nullpin`, `libdft`, `libdft-dta`, _etc._).  
      NOTE: use `Makefile.old` if your Pin version is v2.12-55942 of older.
 
   5. You can remove the program binaries and object files from `src/`
