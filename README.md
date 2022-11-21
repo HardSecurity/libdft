@@ -64,13 +64,13 @@ and `libdft` in your local home directory):
  /usr/src/pin/pin -follow_execv -t ~/libdft/tools/nullpin.so -- <executable>
 ```
 
-  a. `-follow_execv` command line switch is used in order to execute all
+  a. `-follow_execv` command-line switch is used in order to execute all
      processes spawned by the `exec(3)` class system calls with Pin.
 
-  b. `-t' command line switch specifies the corresponding tool.
+  b. `-t` command-line switch specifies the corresponding tool.
 
 `nullpin` and `libdft` are dummy tools and hence they take no arguments.
 However, in `libdft-dta` you can specify the file that logs alerts and policy
-violations by using the `-l` command line switch after the tool name and before
-`--`.  Additionally, `-s [0|1]`, `-f [0|1]`, and `-n [0|1]` disable|enable
+violations by using the `-l` command-line switch after the tool name and before
+`--`.  Additionally, `-s [0|1]`, `-f [0|1]`, and `-n [0|1]` disable/enable
 `stdin`, files, and network I/O channels as taint sources.
