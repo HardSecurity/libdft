@@ -15,7 +15,7 @@ Further information about the design and implementation of `libdft` can be
 found in our [paper](./libdft_vee2012.pdf), presented at [VEE 2012](https://dl.acm.org/toc/sigplan/2012/47/7).
 
 ```
-@inproceedings {libdft_vee2012,
+@inproceedings{libdft_vee2012,
 	title		= {{libdft: Practical Dynamic Data Flow Tracking for
 				Commodity Systems}},
 	author		= {Kemerlis, Vasileios P. and Portokalidis, Georgios
