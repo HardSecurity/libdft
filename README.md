@@ -34,8 +34,8 @@ found in our [paper](./libdft_vee2012.pdf), presented at [VEE 2012](https://dl.a
 dynamic binary instrumentation (DBI) framework from Intel. In order to install
 `libdft` you first need a working copy on the latest Pin build, as well as the
 essential build tools for GNU/Linux (GCC, GNU Make, _etc._). After downloading
-and installing Pin please follow the instructions in the [`INSTALL`](./INSTALL)
-file, in order to finish the installation of `libdft`.
+and installing Pin please follow the instructions in the
+[`INSTALL`](./INSTALL.md) file, in order to finish the installation of `libdft`.
 
 
 ## Tools
