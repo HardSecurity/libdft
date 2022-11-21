@@ -100,4 +100,4 @@ violations by using the `-l` command-line switch after the tool name and before
 
 ## License
 
-This software uses the [BSD License](./COPYING).
+This software uses the [BSD License](./LICENSE).
