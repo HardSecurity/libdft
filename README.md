@@ -11,15 +11,35 @@ API, which can be used to deliver DFT-enabled tools that can be applied on
 unmodified binaries running on common operating systems and hardware, thus
 facilitating research and rapid prototyping.
 
+Further information about the design and implementation of `libdft` can be
+found in our [paper](./libdft_vee2012.pdf), presented at [VEE 2012](https://dl.acm.org/toc/sigplan/2012/47/7).
+
+```
+@inproceedings {libdft_vee2012,
+	title		= {{libdft: Practical Dynamic Data Flow Tracking for
+				Commodity Systems}},
+	author		= {Kemerlis, Vasileios P. and Portokalidis, Georgios
+				and Jee, Kangkook and Keromytis, Angelos D.},
+	booktitle	= {ACM SIGPLAN/SIGOPS Conference on Virtual Execution
+				Environments (VEE)},
+	pages		= {121--132},
+	year		= {2012}
+}
+```
+
+
 ## Installation
+
 `libdft` relies on Pin (http://www.intel.com/software/pintool), which is a
 dynamic binary instrumentation (DBI) framework from Intel. In order to install
 `libdft` you first need a working copy on the latest Pin build, as well as the
 essential build tools for GNU/Linux (GCC, GNU Make, _etc._). After downloading
-and installing Pin please follow the instructions in the [`INSTALL`](INSTALL)
+and installing Pin please follow the instructions in the [`INSTALL`](./INSTALL)
 file, in order to finish the installation of `libdft`.
 
+
 ## Tools
+
 `libdft` is designed to facilitate the creation of "Pintools" that employ
 dynamic DFT. As the name implies, `libdft` is also a shared library, which can
 be used to transparently perform DFT on binaries. Additionally, it provides an
@@ -54,7 +74,9 @@ are used in indirect control transfers, and if so, it halts execution with an
 informative message containing the offending instruction and the contents of
 the instruction pointer.
 
+
 ## Usage
+
 After building both `libdft` and the accompanying tools (_i.e.,_ `nullpin`,
 `libdft`, and `libdft-dta`), you can apply them directly in unmodified x86
 Linux binaries as follows (assuming that Pin in installed in `/usr/src/pin`,
@@ -74,3 +96,8 @@ However, in `libdft-dta` you can specify the file that logs alerts and policy
 violations by using the `-l` command-line switch after the tool name and before
 `--`.  Additionally, `-s [0|1]`, `-f [0|1]`, and `-n [0|1]` disable/enable
 `stdin`, files, and network I/O channels as taint sources.
+
+
+## License
+
+This software uses the [BSD License](./COPYING).
